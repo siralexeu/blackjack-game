@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack - Casino</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎰 BLACKJACK 🎰</h1>
+        
+        <div class="game-info">
+            <div class="info-box">
+                <h3>💰 Chips</h3>
+                <p class="chips" id="chips">1000</p>
+            </div>
+            <div class="info-box">
+                <h3>Wins</h3>
+                <p id="wins">0</p>
+            </div>
+            <div class="info-box">
+                <h3>Losses</h3>
+                <p id="losses">0</p>
+            </div>
+        </div>
+
+        <div class="betting-area game-phase active" id="betting-phase">
+            <div class="betting-title">PLACE YOUR BET</div>
+            <div class="bet-amount" id="current-bet">$0</div>
+            
+            <div class="chip-buttons">
+                <div class="chip chip-10" onclick="addBet(10)">
+                    <div>$10</div>
+                </div>
+                <div class="chip chip-25" onclick="addBet(25)">
+                    <div>$25</div>
+                </div>
+                <div class="chip chip-50" onclick="addBet(50)">
+                    <div>$50</div>
+                </div>
+                <div class="chip chip-100" onclick="addBet(100)">
+                    <div>$100</div>
+                </div>
+                <div class="chip chip-500" onclick="addBet(500)">
+                    <div>$500</div>
+                </div>
+            </div>
+
+            <div class="bet-controls">
+                <button class="btn-clear" onclick="clearBet()">Clear Bet</button>
+                <button class="btn-deal" onclick="deal()" id="deal-btn">DEAL</button>
+            </div>
+        </div>
+
+        <div class="table game-phase" id="playing-phase">
+            <div class="hand">
+                <div class="hand-title">🎩 DEALER</div>
+                <div class="cards" id="dealer-cards"></div>
+                <div class="score" id="dealer-score"></div>
+            </div>
+
+            <div class="hand">
+                <div class="hand-title">👤 YOU</div>
+                <div class="cards" id="player-cards"></div>
+                <div class="score" id="player-score"></div>
+            </div>
+
+            <div class="controls">
+                <button class="btn-hit" id="hit-btn" onclick="hit()">Hit</button>
+                <button class="btn-stand" id="stand-btn" onclick="stand()">Stand</button>
+            </div>
+        </div>
+
+        <div class="message" id="message"></div>
+        
+        <button class="btn-reset" onclick="resetGame()">Reset Chips</button>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
