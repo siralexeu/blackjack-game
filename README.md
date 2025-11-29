@@ -4,4 +4,4 @@ A simple Blackjack game where you try to beat the dealer by getting to 21. Deale
 
 ## 🎮 How to Play
 
-Open [link](https://siralexeu.github.io/blackjack-game/) in your browser to start playing. 
+Open [this link](https://siralexeu.github.io/blackjack-game/) in your browser to start playing. 
