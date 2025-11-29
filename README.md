@@ -1,6 +1,6 @@
 # 🎰 Blackjack Game
 
-A simple browser-based Blackjack game. Place your bets, play against the dealer, and try to build your chip stack. Start with $1000 and see how much you can win!
+A simple Blackjack game where you try to beat the dealer by getting to 21. Dealer must stand on 17. Start with $1000 and see how much you can win!
 
 ## 🎮 How to Play
 
